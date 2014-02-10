@@ -89,7 +89,7 @@ You can get source records that have evaluated the target record:
 You can get target records that have been evaluated by a given source record, as well as evaluations from a particular source:
 ```ruby
 Question.evaluated_by(:votes, @user) #=> [@question]
-@question.evaluation_by(:votes, @user) #=> (# of votes by @user)
+@question.evaluation_by(:votes, @user) #=> (value of vote by @user)
 ```
 
 ## Documentation
