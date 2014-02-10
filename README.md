@@ -86,9 +86,10 @@ You can get source records that have evaluated the target record:
 @question.evaluators_for(:votes) #=> [@user]
 ```
 
-You can get target records that have been evaluated by a given source record:
+You can get target records that have been evaluated by a given source record, as well as evaluations from a particular source:
 ```ruby
 Question.evaluated_by(:votes, @user) #=> [@question]
+@question.evaluation_by(:votes, @user) #=> (# of votes by @user)
 ```
 
 ## Documentation
